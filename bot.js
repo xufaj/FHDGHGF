@@ -7,13 +7,13 @@ const ms = require('ms');
  var prefix = "-";
 
 client.on('message', message => {
-  var prefix = "+"; /// غير البرفيكس
+  var aprefix = "+"; /// غير البرفيكس
   
 if (message.author.bot) return;
-if (!message.content.startsWith(prefix)) return;
+if (!message.content.startsWith(aprefix)) return;
    
 let command = message.content.split(" ")[0];
-command = command.slice(prefix.length);
+command = command.slice(aprefix.length);
    
 let args = message.content.split(" ").slice(1);
    
